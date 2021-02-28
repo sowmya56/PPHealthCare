@@ -1,0 +1,63 @@
+
+
+<div class="container" >
+
+    <div class="card" style=" border:2px solid black">
+
+        <div class="card-body">
+
+            <form class="text-center border border-light p-5" [formGroup]="registerForm" (ngSubmit)="OnSubmit()">
+
+                <p class="h4 mb-4">Sign up</p>
+
+                
+                <div class="form-row mb-4">
+                    <div class="col">
+                        <!--  Name -->
+                        <input type="text" class="form-control" placeholder="Name" formControlName="name">
+                        
+                    </div>
+                </div>
+
+                <!-- Activation-Status -->
+                <div class=" form-row mb-4">
+                    
+                    <div class="col" style="text-align: left;">
+                        Activation Status
+                    </div>
+                     
+                
+                    <div class="col">
+                        <input id="true" type="radio" value="True" formControlName="activation_status">
+                        <label for="true">True</label>
+                        <input style="margin-left: 1rem;" id="false" type="radio" value="False"  formControlName="activation_status">
+                        <label for="false">False</label>
+
+                     </div>
+                     <div class="col"></div>
+            
+                     
+                   
+                </div>
+
+     
+                
+                <!-- Birth-Date -->
+                <div class="mb-4">
+                    <input type="date" class="form-control " placeholder="Birth-Date" formControlName="date_of_birth">
+                </div>
+                
+
+                <!-- Sign up button -->
+               
+                <button  class="btn btn-success my-4 btn-block" type="submit">Register</button>
+
+               
+
+            </form>
+            <!-- Default form register -->
+
+        </div>
+    </div>
+
+</div>
